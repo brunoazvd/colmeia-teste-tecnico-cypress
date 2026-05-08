@@ -1,0 +1,37 @@
+[
+	{ "nome": "Email sem @", "email": "test.com" },
+	{ "nome": "Email sem parte local", "email": "@domain.com" },
+	{ "nome": "Email sem domínio", "email": "test@" },
+	{
+		"nome": "Ponto como primeiro caractere da parte local",
+		"email": ".test@domain.com"
+	},
+	{
+		"nome": "Ponto como último caractere da parte local",
+		"email": "test.@domain.com"
+	},
+	{
+		"nome": "Pontos consecutivos na parte local",
+		"email": "test..test@domain.com"
+	},
+	{
+		"nome": "Ponto como primeiro caractere do domínio",
+		"email": "test@.domain.com"
+	},
+	{
+		"nome": "Ponto como último caractere do domínio",
+		"email": "test@domain.com."
+	},
+	{ "nome": "Pontos consecutivos no domínio", "email": "test@domain..com" },
+	{
+		"nome": "Hífen como primeiro caractere do domínio",
+		"email": "test@-domain.com"
+	},
+	{
+		"nome": "Hífen como último caractere do domínio",
+		"email": "test@domain-"
+	},
+	{ "nome": "Caractere inválido no domínio", "email": "test@doma_in.com" },
+	{ "nome": "Caracteres não latinos #1", "email": "тест@домен.com" },
+	{ "nome": "Caracteres não latinos #2", "email": "屁股@混蛋.中国" }
+]
