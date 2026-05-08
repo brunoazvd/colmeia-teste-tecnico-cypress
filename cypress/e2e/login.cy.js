@@ -1,4 +1,4 @@
-import LoginPage from '@pages/LoginPage';
+import LoginPage from '@pages/login-page';
 import casosEmailInvalido from '@fixtures/emails-invalidos.json';
 
 describe('Login - Desafio Colmeia QA', () => {
@@ -6,7 +6,7 @@ describe('Login - Desafio Colmeia QA', () => {
     LoginPage.visitar();
   });
 
-  it('Deve realizar login com sucesso ignorando o modal de erro incoerente', () => {
+  it('Deve realizar login com sucesso', () => {
     cy.fixture('user').then((user) => {
       LoginPage.preencherEmail(user.email);
       LoginPage.preencherSenha(user.senha);
