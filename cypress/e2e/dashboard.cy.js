@@ -58,4 +58,19 @@ describe('Dashboard - Banco de Dados', () => {
     cy.contains(nomeArquivo).should('not.exist');
   });
 
+  it('BUG - Deve validar que o último item não está visível no viewport devido à falta de scroll', () => {
+    for (let i = 0; i < 30; i++) {
+      DashboardPage.criarNovoBanco(`Banco ${i}`);
+    }
+
+    // Tenta forçar o scroll
+    cy.contains('Banco 29').scrollIntoView();
+
+    // Checagem de visibilidade real no viewport
+    cy.contains('Banco 29').then(($el) => {
+      const isVisible = Cypress.dom.isVisible($el[0]);
+      expect(isVisible).to.be.false;
+    });
+  });
+
 })
