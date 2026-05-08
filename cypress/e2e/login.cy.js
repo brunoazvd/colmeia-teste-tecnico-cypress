@@ -1,5 +1,5 @@
-import LoginPage from '../support/pages/LoginPage';
-const casosEmailInvalido = require('../fixtures/emails-invalidos.json');
+import LoginPage from '@pages/LoginPage';
+import casosEmailInvalido from '@fixtures/emails-invalidos.json';
 
 describe('Login - Desafio Colmeia QA', () => {
   beforeEach(() => {
