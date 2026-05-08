@@ -1,0 +1,16 @@
+{
+	"name": "colmeia-teste-tecnico-cypress",
+	"version": "1.0.0",
+	"description": "Teste técnico para o cargo de Analista de Testes na ColmeIA",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open",
+		"cy:run": "cypress run"
+	},
+	"keywords": [],
+	"author": "Bruno Azevedo (brunoazvd@protonmail.com)",
+	"license": "ISC",
+	"devDependencies": {
+		"cypress": "^15.14.2"
+	}
+}
