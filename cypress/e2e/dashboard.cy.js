@@ -54,6 +54,7 @@ describe('Dashboard - Banco de Dados', () => {
     DashboardPage.btnExibirArquivados.click();
 
     // Check: Validar que o banco não é exibido nos arquivados.
+    cy.contains('Itens Arquivados').should('exist');
     cy.contains(nomeArquivo).should('not.exist');
   });
 

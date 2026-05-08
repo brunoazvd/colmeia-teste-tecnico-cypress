@@ -51,7 +51,6 @@ class DashboardPage {
     this.inputNomeBanco.type(nome);
     this.btnSalvar.click();
   }
-
 }
 
 export default new DashboardPage();
