@@ -49,7 +49,7 @@ Durante a exploração e automação, identifiquei comportamentos que divergem d
 - Navbar: O logotipo e o menu de perfil do usuário são puramente estéticos, não possuindo links ou menus de configuração.
 - Colmeia Forms: O link no menu lateral leva a uma página vazia. Recomendo desativar ou ocultar o acesso enquanto a funcionalidade estiver em desenvolvimento para evitar frustração do usuário.
 
-5. **Implementação de `data-testid`:** Durante o desenvolvimento da automação, notou-se que muitos elementos não possuem identificadores únicos e estáveis. Recomenda-se a adoção do atributo data-testid em botões, inputs e containers críticos. Isso reduz a dependência de seletores CSS frágeis (como classes ou hierarquia de DOM), tornando os testes mais resilientes a mudanças de layout e melhorando a manutenção do projeto a longo prazo.
+5. **Implementação de `data-testid`:** Durante o desenvolvimento da automação, notei que os elementos não possuem identificadores únicos e estáveis. Recomenda-se a adoção do atributo data-testid em botões, inputs e containers críticos. Isso reduz a dependência de seletores CSS frágeis (como classes ou hierarquia de DOM), tornando os testes mais resilientes a mudanças de layout e melhorando a manutenção do projeto a longo prazo.
 
 ## Como rodar os testes
 
